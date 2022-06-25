@@ -229,7 +229,7 @@ img {
     padding-top: $header-height;
   }
 
-  &__wrapper {
+  &__content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,7 +237,7 @@ img {
     background-color: $purple-color;
   }
 
-  &__wrapper:nth-child(2) {
+  &__content:nth-child(2) {
     background-color: $yellow-color;
     border-top: 2px solid $black-color;
   }
