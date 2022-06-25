@@ -86,7 +86,7 @@ img {
 
   &-title {
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: $font-bold;
     margin-bottom: 1rem;
   }
@@ -127,6 +127,10 @@ img {
   &-gap {
     gap: 3rem;
   }
+}
+
+.main {
+  overflow: hidden;
 }
 
 // ===== HEADER SECTION =====
@@ -215,5 +219,30 @@ img {
   .show-menu {
     opacity: 1;
     transform: scaleY(1);
+  }
+}
+
+// ===== HOME SECTION =====
+.home {
+  &__container {
+    display: grid;
+    padding-top: $header-height;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: $purple-color;
+  }
+
+  &__wrapper:nth-child(2) {
+    background-color: $yellow-color;
+    border-top: 2px solid $black-color;
+  }
+
+  &__data {
+    text-align: center;
   }
 }
