@@ -500,3 +500,69 @@ img {
     }
   }
 }
+
+// ===== FOOTER SECTION =====
+.footer {
+  padding: 7rem 0 3rem;
+  background-color: $black-color;
+
+  &__container {
+    gap: 7rem;
+  }
+
+  &__data {
+    text-align: center;
+  }
+
+  &__title,
+  &__text {
+    color: $white-color;
+  }
+
+  &__button {
+    box-shadow: -4px 4px 0 $white-color;
+  }
+
+  &__copy {
+    display: grid;
+    gap: 2rem;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__logo {
+    font-size: 20px;
+    font-weight: $font-bold;
+    color: $white-color;
+  }
+
+  &__list {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__link {
+    font-size: 15px;
+    color: $white-color;
+
+    &.active-link {
+      font-weight: $font-semibold;
+    }
+  }
+
+  &__rights {
+    text-align: center;
+    font-size: 15px;
+    line-height: $leading-text;
+    color: $white-color;
+    padding-top: 2rem;
+    border-top: 2px solid $white-color;
+  }
+}
