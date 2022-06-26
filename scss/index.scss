@@ -169,7 +169,7 @@ img {
       padding: 2rem;
       background-color: $white-color;
       border: 2px solid $black-color;
-      box-shadow: -8px 8px 0 $black-color;
+      box-shadow: -4px 4px 0 $black-color;
       border-radius: 1.5rem;
       transition: $transition-400;
       opacity: 0;
@@ -428,5 +428,75 @@ img {
   &__data,
   &__img {
     justify-self: center;
+  }
+}
+
+// ===== FAQ SECTION =====
+.faq {
+  &__container {
+    gap: 1rem;
+  }
+
+  &__data {
+    justify-self: center;
+  }
+
+  &__accordion {
+    display: grid;
+    gap: 1.5rem;
+
+    &-item {
+      background-color: $white-color;
+      border: 2px solid $black-color;
+      box-shadow: -4px 4px 0 $black-color;
+      border-radius: 10px;
+      transition: $transition-400;
+    }
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: $transition-400;
+    }
+
+    &-title {
+      font-size: 16px;
+      font-weight: $font-semibold;
+    }
+
+    &-icon {
+      display: inline-flex;
+      font-size: 1.5rem;
+      transition: $transition-400;
+    }
+
+    &-content {
+      overflow: hidden;
+      height: 0;
+      transition: $transition-400;
+    }
+
+    &-text {
+      font-size: 13px;
+      line-height: $leading-text;
+      padding: 0 1.5em 1.5rem;
+      transition: $transition-400;
+    }
+  }
+
+  // accordion open
+  .accordion-open {
+    & .faq__accordion-icon {
+      transform: rotate(45deg);
+    }
+
+    &.faq__accordion-item {
+      background-color: $green-color;
+    }
   }
 }
