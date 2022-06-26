@@ -259,6 +259,10 @@ img {
     row-gap: 3.5rem;
   }
 
+  &__content {
+    align-self: center;
+  }
+
   &__img {
     width: 120px;
   }
@@ -388,5 +392,41 @@ img {
     text-align: center;
     font-size: 15px;
     line-height: $leading-text;
+  }
+}
+
+// ===== TESTIMONIAL SECTION =====
+.testimonial {
+  padding: 7rem 0;
+  background-color: $yellow-color;
+  border-bottom: 2px solid $black-color;
+
+  &__data {
+    &-img {
+      width: 200px;
+      margin-bottom: 1rem;
+    }
+
+    &-text {
+      font-size: 24px;
+      font-weight: $font-medium;
+      line-height: $leading-text;
+      margin-bottom: 2rem;
+    }
+
+    &-name {
+      font-size: 20px;
+      font-weight: $font-medium;
+      margin-bottom: 0.5rem;
+    }
+
+    &-profession {
+      font-size: 15px;
+    }
+  }
+
+  &__data,
+  &__img {
+    justify-self: center;
   }
 }
