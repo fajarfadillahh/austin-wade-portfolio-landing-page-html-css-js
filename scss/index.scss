@@ -357,7 +357,7 @@ img {
     }
   }
 
-  &__item:nth-child(even) {
+  &__item:nth-child(2) {
     background-color: $yellow-color;
     border-top: 2px solid $black-color;
     border-bottom: 2px solid $black-color;
@@ -365,5 +365,28 @@ img {
 
   &__content:nth-child(2) &__item:nth-child(2) {
     background-color: $pink-color;
+  }
+
+  &__content:nth-child(3) &__item:nth-child(2) {
+    border-bottom: 0;
+  }
+}
+
+// ===== ABOUT SECTION =====
+.about {
+  padding: 7rem 0;
+  background-color: $purple-color;
+  border-top: 2px solid $black-color;
+  border-bottom: 2px solid $black-color;
+
+  &__data,
+  &__img {
+    justify-self: center;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 15px;
+    line-height: $leading-text;
   }
 }
