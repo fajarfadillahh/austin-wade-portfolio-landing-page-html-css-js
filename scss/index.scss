@@ -614,6 +614,21 @@ img {
   color: $white-color;
 }
 
+// ===== SCROLLBAR =====
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba($color: #000000, $alpha: 0.2);
+
+  &-thumb {
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    border-radius: 10rem;
+
+    &:hover {
+      background-color: rgba($color: #000000, $alpha: 0.5);
+    }
+  }
+}
+
 // ===== MEDIA QUERIES =====
 // width 480px
 @media screen and (min-width: 480px) {
