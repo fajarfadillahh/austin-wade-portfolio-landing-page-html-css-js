@@ -706,3 +706,155 @@ img {
     }
   }
 }
+
+// width 968px
+@media screen and (min-width: 968px) {
+  .header__list,
+  .header__social {
+    gap: 2rem;
+  }
+
+  .home {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__content:nth-child(2) {
+      border-left: 2px solid $black-color;
+    }
+
+    &__data {
+      width: auto;
+    }
+
+    &__data,
+    &__data-title,
+    &__data-text {
+      text-align: left;
+    }
+
+    &__img {
+      width: auto;
+    }
+  }
+
+  .feature {
+    &__data {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__title,
+    &__text {
+      text-align: left;
+    }
+
+    &__title {
+      width: 500px;
+    }
+
+    &__content {
+      grid-template-columns: 0.7fr 1fr;
+      align-items: center;
+
+      &-data {
+        justify-content: left;
+      }
+
+      &-item {
+        text-align: left;
+      }
+
+      &-img {
+        width: auto;
+      }
+    }
+  }
+
+  .portfolio {
+    &__data {
+      width: 580px;
+    }
+
+    &__content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__content:nth-child(2) &__item:nth-child(1) {
+      order: 2;
+    }
+
+    &__content:nth-child(2) &__item:nth-child(2) {
+      border-right: 2px solid $black-color;
+    }
+
+    &__content:nth-child(1) &__item:nth-child(2),
+    &__content:nth-child(3) &__item:nth-child(2) {
+      border-left: 2px solid $black-color;
+    }
+
+    &__item {
+      align-items: flex-start;
+    }
+
+    &__item-data {
+      width: auto;
+      text-align: left;
+    }
+
+    &__item-img {
+      width: auto;
+    }
+  }
+
+  .about {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+
+    &__data,
+    &__img {
+      width: auto;
+    }
+
+    &__title,
+    &__text {
+      text-align: left;
+    }
+  }
+
+  .testimonial {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+
+    &__data {
+      order: 2;
+    }
+
+    &__data,
+    &__img {
+      width: auto;
+    }
+  }
+
+  .faq {
+    &__accordion {
+      width: 700px;
+      justify-self: center;
+    }
+
+    &__accordion-text {
+      width: 600px;
+    }
+  }
+
+  .footer__group {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
