@@ -672,3 +672,37 @@ img {
     width: 480px;
   }
 }
+
+// width 767px
+@media screen and (min-width: 767px) {
+  .header {
+    &__container {
+      position: relative;
+    }
+
+    &__logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__menu {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__list {
+      flex-direction: row;
+    }
+
+    &__social {
+      margin-top: 0;
+    }
+
+    &__toggle {
+      display: none;
+    }
+  }
+}
