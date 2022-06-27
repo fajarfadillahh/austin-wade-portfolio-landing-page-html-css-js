@@ -515,7 +515,7 @@ img {
 
 // ===== FOOTER SECTION =====
 .footer {
-  padding: 7rem 0 3rem;
+  padding: 7rem 0 2rem;
   background-color: $black-color;
 
   &__container {
@@ -636,5 +636,39 @@ img {
   .about__img,
   .testimonial__img {
     width: 400px;
+  }
+}
+
+// width 640px
+@media screen and (min-width: 640px) {
+  .section-title {
+    font-size: 38px;
+  }
+
+  .home__data,
+  .feature__data,
+  .portfolio__data,
+  .portfolio__item-data,
+  .about__data,
+  .testimonial__data,
+  .footer__data {
+    width: 480px;
+  }
+
+  .feature__content-title,
+  .portfolio__item-title {
+    font-size: 32px;
+  }
+
+  .faq__accordion-title {
+    font-size: 18px;
+  }
+
+  .home__img,
+  .feature__content-img,
+  .portfolio__item-img,
+  .about__img,
+  .testimonial__img {
+    width: 480px;
   }
 }
